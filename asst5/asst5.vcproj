@@ -170,11 +170,7 @@
 			Name="Source Files"
 			>
 			<File
-				RelativePath=".\asst4-snippets.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\asst4.cpp"
+				RelativePath=".\asst5.cpp"
 				>
 			</File>
 			<File

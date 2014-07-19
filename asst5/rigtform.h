@@ -48,10 +48,12 @@ public:
 
   Cvec4 operator * (const Cvec4& a) const {
     // TODO
+	  return Cvec4();
   }
 
   RigTForm operator * (const RigTForm& a) const {
     // TODO
+	  return RigTForm();
   }
 };
 
@@ -69,7 +71,7 @@ inline RigTForm linFact(const RigTForm& tform) {
 
 inline Matrix4 rigTFormToMatrix(const RigTForm& tform) {
   // TODO
-  //return m;
+	return Matrix4();
 }
 
 #endif

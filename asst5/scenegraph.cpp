@@ -41,14 +41,17 @@ public:
 
   const RigTForm getAccumulatedRbt(int offsetFromStackTop = 0) {
     // TODO
+	  return RigTForm();
   }
 
   virtual bool visit(SgTransformNode& node) {
     // TODO
+	  return true;
   }
 
   virtual bool postVisit(SgTransformNode& node) {
     // TODO
+	return true;
   }
 };
 

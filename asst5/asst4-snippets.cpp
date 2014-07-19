@@ -29,7 +29,7 @@
 static const int PICKING_SHADER = 2; // index of the picking shader is g_shaerFiles
 static const int g_numShaders = 3; // 3 shaders instead of 2
 static const char * const g_shaderFiles[g_numShaders][2] = {
-  ...
+  ...	
   {"./shaders/basic-gl3.vshader", "./shaders/pick-gl3.fshader"}
 };
 static const char * const g_shaderFilesGl2[g_numShaders][2] = {
