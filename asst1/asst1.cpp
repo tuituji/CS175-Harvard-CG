@@ -53,6 +53,8 @@ static bool g_rightClicked     = false;     // is the right mouse button down?
 static float g_objScale        = 1.0;       // scale factor for object
 static int g_leftClickX, g_leftClickY;      // coordinates for mouse left click event
 static int g_rightClickX, g_rightClickY;    // coordinates for mouse right click event
+static int key_vertical = 0;
+static int key_horizontal = 0;
 
 // our global shader states
 struct SquareShaderState {
@@ -155,8 +157,11 @@ static void display(void) {
 ///  callback function to handle it appropriately.
 
 static void reshape(int w, int h) {
-  g_width = w;
-  g_height = h;
+	g_width = w;
+	g_height = h;
+	g_objScale = h / (float)w ;
+	key_vertical = 0;
+	key_horizontal = 0;
   glViewport(0, 0, w, h);
   glutPostRedisplay();
 }
@@ -233,6 +238,27 @@ static void keyboard(unsigned char key, int x, int y) {
     << "s\t\tsave screenshot\n"
     << "drag right mouse to change square size\n";
     break;
+  case 'i':
+	++key_vertical;
+	glViewport(key_horizontal, key_vertical, g_width, g_height);
+    glutPostRedisplay();
+	break;
+  case 'k':
+	--key_vertical;
+	glViewport(key_horizontal, key_vertical, g_width, g_height);
+    glutPostRedisplay();
+	break;
+  case 'j':
+	--key_horizontal;
+	glViewport(key_horizontal, key_vertical, g_width, g_height);
+    glutPostRedisplay();
+	break;
+  case 'l':
+	++key_horizontal;
+	glViewport(key_horizontal, key_vertical, g_width, g_height);
+    glutPostRedisplay();
+	break;
+
   case 'q':
     exit(0);
   case 's':

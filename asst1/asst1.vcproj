@@ -203,6 +203,22 @@
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
+			<File
+				RelativePath=".\shaders\asst1-sq-gl2.fshader"
+				>
+			</File>
+			<File
+				RelativePath=".\shaders\asst1-sq-gl2.vshader"
+				>
+			</File>
+			<File
+				RelativePath=".\shaders\asst1-sq-gl3.fshader"
+				>
+			</File>
+			<File
+				RelativePath=".\shaders\asst1-sq-gl3.vshader"
+				>
+			</File>
 		</Filter>
 	</Files>
 	<Globals>
